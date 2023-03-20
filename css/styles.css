@@ -57,7 +57,7 @@ body {
   color: #404bbf;
   border-radius: 2px;
 }
-.header-add {
+.header-contact {
   font-style: normal;
 }
 .header-email {
@@ -222,23 +222,6 @@ body {
 .filter-list {
   padding: 12px 24px;
 }
-.filter-btn-active {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--main-logo-color);
-  background-color: var(--second-background-color);
-  cursor: pointer;
-}
-.filter-btn-active:is(:hover, :focus) {
-  background: #404bbf;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--main-title-color);
-}
 .filter-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -249,6 +232,12 @@ body {
   color: var(--main-logo-color);
   background-color: var(--second-background-color);
   cursor: pointer;
+}
+.filter-btn:is(:hover, :focus) {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--main-title-color);
 }
 .product-title {
   font-weight: 500;
