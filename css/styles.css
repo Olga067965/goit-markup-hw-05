@@ -4,11 +4,12 @@
   --second-logo-color: #2e2f42;
   --main-paragraph-color: #434455;
   --main-background-color: #ffffff;
+  --second-background-color: #f4f4fd;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
+  background-color: var(--main-background-color);
 }
 .list {
   list-style: none;
@@ -36,7 +37,6 @@ body {
 .logo-studio {
   color: var(--second-logo-color);
 }
-
 .header-list {
   display: flex;
   flex-direction: row;
@@ -57,12 +57,15 @@ body {
   color: #404bbf;
   border-radius: 2px;
 }
+.header-address {
+  font-style: normal;
+}
 .header-email,
 .header-phone {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-style: normal;
+  color: var(--main-paragraph-color);
 }
 .header-email:is(:hover, :focus) {
   color: #404bbf;
@@ -107,6 +110,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--second-logo-color);
 }
 .features-text {
   font-size: 16px;
@@ -124,6 +128,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--second-logo-color);
 }
 .what-img {
   flex-direction: column;
@@ -143,6 +148,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--second-logo-color);
 }
 .team-img {
   display: flex;
@@ -165,6 +171,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  color: var(--second-logo-color);
 }
 .team-text {
   font-size: 16px;
@@ -176,10 +183,10 @@ body {
   flex-grow: 0;
   color: var(--main-paragraph-color);
 }
-footer {
+.bottom {
   background: #2e2f42;
 }
-.footer-logo-studio {
+.bottom-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -194,7 +201,7 @@ footer {
   order: 1;
   flex-grow: 0;
 }
-.footer-text {
+.bottom-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -211,6 +218,14 @@ footer {
   padding: 12px 24px;
 }
 .filter-btn-active {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-logo-color);
+  background-color: var(--second-background-color);
   align-items: flex-start;
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -219,14 +234,6 @@ footer {
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--main-title-color);
-  background-color: var(--main-logo-color);
   cursor: pointer;
 }
 .filter-btn-active:is(:hover, :focus) {
