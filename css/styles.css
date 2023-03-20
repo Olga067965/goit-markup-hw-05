@@ -57,11 +57,10 @@ body {
   color: #404bbf;
   border-radius: 2px;
 }
-.header-address {
+.header-add {
   font-style: normal;
 }
-.header-email,
-.header-phone {
+.header-email {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -69,6 +68,12 @@ body {
 }
 .header-email:is(:hover, :focus) {
   color: #404bbf;
+}
+.header-phone {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-paragraph-color);
 }
 .hero {
   background: #2e2f42;
@@ -226,14 +231,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--main-logo-color);
   background-color: var(--second-background-color);
-  align-items: flex-start;
-  background: #404bbf;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   cursor: pointer;
 }
 .filter-btn-active:is(:hover, :focus) {
@@ -247,21 +244,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--main-btn-color);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 12px 24px;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: var(--main-logo-color);
+  background-color: var(--second-background-color);
   cursor: pointer;
 }
 .card-item {
