@@ -58,26 +58,17 @@ body {
 .contact {
   font-style: normal;
 }
-.header-contact {
+.header-email-phone {
   font-style: normal;
   list-style: none;
 }
-.header-email {
+.header-contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-paragraph-color);
 }
-.header-email:is(:hover, :focus) {
-  color: #404bbf;
-}
-.header-phone {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-paragraph-color);
-}
-.header-phone:is(:hover, :focus) {
+.header-contacts:is(:hover, :focus) {
   color: #404bbf;
 }
 .hero {
