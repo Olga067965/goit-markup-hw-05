@@ -52,6 +52,7 @@ body {
   letter-spacing: 0.02em;
   order: 0;
   flex-grow: 0;
+  color: var(--second-logo-color);
 }
 .header-link:is(:hover, :focus) {
   color: #404bbf;
