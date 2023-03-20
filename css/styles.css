@@ -250,17 +250,6 @@ body {
   background-color: var(--second-background-color);
   cursor: pointer;
 }
-.card-item {
-  box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #e7e9fc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px 16px;
-  gap: 8px;
-}
 .card-title {
   font-weight: 500;
   font-size: 20px;
