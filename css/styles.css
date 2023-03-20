@@ -1,12 +1,14 @@
 :root {
   --main-title-color: #ffffff;
+  --main-logo-color: #4d5ae5;
+  --second-logo-color: #2e2f42;
+  --main-paragraph-color: #434455;
+  --main-background-color: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
   color: #434455;
-  background-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -16,13 +18,7 @@ body {
   font-style: normal;
 }
 .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-}
-.logo-web {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -30,24 +26,24 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  text-transform: uppercase;
+  color: var(--main-logo-color);
 }
 .logo-studio {
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  color: var(--second-logo-color);
 }
+
 .header-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
+  color: var(--second-logo-color);
 }
 .header-item {
   font-weight: 500;
@@ -66,6 +62,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 .header-email:is(:hover, :focus) {
   color: #404bbf;
@@ -97,13 +94,15 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 .hero-btn:is(:hover, :focus) {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.features-title {
+.features-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -113,6 +112,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--main-paragraph-color);
 }
 .what-list {
   display: inline;
@@ -132,6 +132,9 @@ body {
 }
 .team {
   background: #f4f4fd;
+}
+.team-item {
+  background-color: var(--main-background-color);
 }
 .team-title {
   font-weight: 700;
@@ -171,6 +174,7 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  color: var(--main-paragraph-color);
 }
 footer {
   background: #2e2f42;
@@ -215,26 +219,31 @@ footer {
   flex: none;
   order: 0;
   flex-grow: 0;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--main-title-color);
+  background-color: var(--main-logo-color);
+  cursor: pointer;
 }
 .filter-btn-active:is(:hover, :focus) {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  color: var(--main-title-color);
 }
 .filter-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--main-btn-color);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -246,6 +255,7 @@ footer {
   flex: none;
   order: 1;
   flex-grow: 0;
+  cursor: pointer;
 }
 .card-item {
   box-sizing: border-box;
@@ -263,12 +273,13 @@ footer {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--second-logo-color);
 }
 .card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--main-paragraph-color);
 }
 .card-img {
   mix-blend-mode: normal;
