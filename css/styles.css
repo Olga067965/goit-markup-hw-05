@@ -80,6 +80,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-paragraph-color);
 }
+.header-phone:is(:hover, :focus) {
+  color: #404bbf;
+}
 .hero {
   background: #2e2f42;
 }
