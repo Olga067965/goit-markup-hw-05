@@ -189,7 +189,9 @@ nav {
   padding-bottom: 117px;
 }
 .what-item {
-  flex-basis: calc((100%-24px) / 3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .what-title {
   margin-bottom: 72px;
@@ -198,7 +200,6 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
 .team {
   background: var(--grey-color);
   padding-top: 120px;
@@ -243,7 +244,8 @@ nav {
   display: block;
 }
 .portfolio {
-  padding: 61px 0;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .filter-list {
   display: flex;
