@@ -466,6 +466,7 @@ nav {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: translate(50%, 50%) scale(0);
 }
 .backdrop {
   position: fixed;
@@ -487,27 +488,11 @@ nav {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  animation-name: changeBgColor;
-  animation-duration: 2000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  transition: transform 3s;
 }
-.modal:hover {
-  animation-play-state: paused;
-}
-@keyframes changeBgColor {
-  0% {
-    background-color: var(--grey-color);
-  }
-
-  50% {
-    background-color: var(--blue-color);
-  }
-
-  100% {
-    background-color: var(--white-color);
-  }
+.modal:is(:hover, :focus) {
+  transform: scale(2) rotate(0deg);
+  opacity: 1;
 }
 .close-modal-btn {
   width: 24px;
@@ -519,6 +504,8 @@ nav {
   margin-left: auto;
   margin-top: 24px;
   margin-right: 24px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal-btn:is(:hover, :focus) {
   background: var(--hover-blue-color);
