@@ -466,7 +466,6 @@ nav {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transform: translate(50%, 50%) scale(0);
 }
 .backdrop {
   position: fixed;
@@ -474,8 +473,7 @@ nav {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1s linear, visibility 1s linear;
 }
 .modal {
   position: absolute;
@@ -487,7 +485,12 @@ nav {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 1s linear;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+  transition: 2s;
 }
 .close-modal-btn {
   width: 24px;
@@ -495,10 +498,12 @@ nav {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
   margin-left: auto;
   margin-top: 24px;
   margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -508,6 +513,7 @@ nav {
 }
 .close-modal-svg {
   color: var(--dark-color);
+  line-height: 100%;
 }
 .close-modal-btn:is(:hover, :focus) .close-modal-svg {
   color: var(--white-color);
